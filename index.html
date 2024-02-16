@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width">
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="Imagenes/Fabicon.png" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <title>Encriptador-ONEG6</title>    
+</head>
+<body>
+    <header>
+        <img class="logo" src="Imagenes/Logo.svg" alt="logo">
+    </header>
+    <main>
+        <div class="container">
+            <div class="encriptar">
+                <textarea name="texto" class="texto" id="texto" cols="30" rows="10" placeholder='Escribe tu secreto aquí'></textarea>
+            </div>
+            <div class="alerta">
+                <p>Sólo letras minúsculas y sin acentos</p>
+            </div>
+            <div class="botones">
+                <button class="botonEncriptar" type="button" onclick="encriptar()">Encriptar</button>
+                <input type="button" class="botonDesencriptar" value="Desencriptar" onclick="desencriptar()">
+            </div>
+        </div>
+        <div class="encriptado">
+            <img src="Imagenes/vault-154023.svg" alt="" id="cajaFuerte">
+            <div class="mensajeEncriptado" id="mensajeEncriptado">
+                <h2 id="tituloMensaje">Ningún mensaje encontrado</h2>
+                <p id="parrafo">Escribe el secreto que desees ocultar o revelar</p>                
+            </div>
+        </div>
+    </main>
+    <script src="script.js"></script>
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+</body>
+</html>
