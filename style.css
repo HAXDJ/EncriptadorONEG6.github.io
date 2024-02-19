@@ -113,7 +113,7 @@ header{
 .botonDesencriptar:active,.botonEncriptar:active{
     background-color: #8d1f1f;
     transform: translateY(2px);
-  }
+}
 
 .encriptado{
     display: flex;
@@ -163,9 +163,9 @@ header{
 }
 
 .encriptado img{
-    width: 80%;
-    height: 50%;
-    top: 15%;
+    margin-top: 10%;
+    width: 70%;
+    height: 40%;   
 }
 
 /*Responsive Design*/
