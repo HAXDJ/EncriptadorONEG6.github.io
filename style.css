@@ -16,7 +16,7 @@ header{
 .texto{
     position: absolute;
     width: 42%;
-    height: 60%;
+    height: 55%;
     left: 12%;
     top: 15%;
     border: none;
@@ -46,7 +46,7 @@ header{
     position: absolute;
     width: 80%;
     left: 12%;
-    top: 80%;
+    top: 70%;
 }
 
 .alerta p{
@@ -70,7 +70,7 @@ header{
     position: absolute;
     width: 80%;
     left: 12%;
-    top: 82%;
+    top: 72%;
 }
 
 .botonEncriptar{
@@ -105,10 +105,11 @@ header{
     color: white;
 }
 
-.botonFlotante{
+.botonCopiar{
     align-items: center;
     justify-content: center;
     margin: 0.3%;
+    margin-top: 5%;
     padding: 2%;
     gap: 8%;
     width: 50%;
@@ -131,13 +132,14 @@ header{
     transform: translateY(2px);
 }
 
-.botonFlotante:hover{
+.botonCopiar:hover{
     margin: 0.3%;
+    margin-top: 5%;
     width: 49.5%;
     padding: 1.8%;
 }
 
-.botonFlotante:active{
+.botonCopiar:active{
     background-color: #8d1f1f;
     color: white;
     transform: translateY(2px);
@@ -149,7 +151,7 @@ header{
     position: absolute;
     font-family: 'Roboto';
     width: 30%;
-    height: 90%;
+    height: 85%;
     left: 60%;
     top: 5%;
     background: rgb(210, 235, 255);
@@ -207,37 +209,41 @@ header{
     }
     .texto{
         width: 80%;
-        height: 60%;
+        height: 50%;
         left: 10%;
         top: 5%;
     }
     .alerta{
         width: 80%;
         height: 10%;
-        top: 55%;
-    }
+        top: 50%;
+    }    
     .alerta p{
         font-size: 16px;
     }
     .botones{
         width: 80%;
         height: 10%;
-        top: 60%;
+        top: 55%;
     }
     .botonEncriptar,.botonDesencriptar{
         width: 48%;
         border-radius: 16px;        
     }
-    .botonDesencriptar:hover,.botonEncriptar:hover{
+    .botonEncriptar:hover,.botonDesencriptar:hover{
         margin: 0.3%;
-        width: 47.5;
-        padding: 1.8%;
+        width: 47.5%;
+        padding: 1.8%;        
+    }
+    .botonEncriptar:active,.botonDesencriptar:active{
+        background: #8d1f1f;
+        transform: translateY(2px);
     }
     .encriptado{
         width: 80%;
-        height: 20%;
+        height: 25%;
         left: 10%;
-        top: 77%;
+        top: 72%;
     }
     .encriptado img{
         top: 0px;
