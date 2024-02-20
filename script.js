@@ -15,10 +15,10 @@ function encriptar(){
         if (texto.length !=0){
             document.getElementById('texto').value = textoCifrado;
             tituloMensaje.textContent = 'Tu secreto fue encriptado';
-            cajaFuerte.src = './imagenes/close.png';
+            cajaFuerte.src = './imagenes/close.svg';
             parrafo.textContent = "";
         }else{
-            cajaFuerte.src = './imagenes/vault.png';
+            cajaFuerte.src = './imagenes/vault-154023';
             tituloMensaje.textContent = 'Ningún secreto fue encriptado';
             parrafo.textContent = 'Escribe el secreto que desees ocultar o revelar';
             swal('Oooopss!', 'Debes ingresar el secreto', 'warning');            
@@ -41,10 +41,10 @@ function desencriptar(){
         if (texto.length !=0){
             document.getElementById('texto').value = textoCifrado;
             tituloMensaje.textContent = 'Tu secreto fue desencriptado';
-            cajaFuerte.src = './imagenes/open.png';
+            cajaFuerte.src = './imagenes/open.svg';
             parrafo.textContent = "";
         }else{
-            cajaFuerte.src = './imagenes/vault.png';
+            cajaFuerte.src = './imagenes/vault-154023';
             tituloMensaje.textContent = 'Ningún secreto fue encriptado';
             parrafo.textContent = 'Escribe el secreto que desees ocultar o revelar';
             swal('Oooopss!', 'Debes ingresar el secreto', 'warning');
