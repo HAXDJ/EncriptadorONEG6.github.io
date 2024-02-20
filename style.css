@@ -105,6 +105,22 @@ header{
     color: white;
 }
 
+.botonFlotante{
+    align-items: center;
+    justify-content: center;
+    margin: 0.3%;
+    padding: 2%;
+    gap: 8%;
+    width: 50%;
+    background-color: rgb(255, 246, 198);
+    border-radius: 24px;
+    font-family: 'Roboto';
+    font-size: 18px;
+    line-height: 25px;
+    text-align: center;
+    color: rgb(29, 21, 13);
+}
+
 .botonDesencriptar:hover,.botonEncriptar:hover{
     margin: 0.3%;
     width: 24.5%;
@@ -112,6 +128,18 @@ header{
 }
 .botonDesencriptar:active,.botonEncriptar:active{
     background-color: #8d1f1f;
+    transform: translateY(2px);
+}
+
+.botonFlotante:hover{
+    margin: 0.3%;
+    width: 49.5%;
+    padding: 1.8%;
+}
+
+.botonFlotante:active{
+    background-color: #8d1f1f;
+    color: white;
     transform: translateY(2px);
 }
 

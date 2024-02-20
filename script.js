@@ -50,3 +50,14 @@ function desencriptar(){
             swal('Oooopss!', 'Debes ingresar el secreto', 'warning');
         }
 }
+
+function copiarTexto() {
+    let textoEncriptado = document.getElementById('texto').value;
+    let textoTemporal = document.createElement('textarea');
+    textoTemporal.value = textoEncriptado;
+
+    document.body.appendChild(textoTemporal);
+    textoTemporal.select();
+    document.execCommand('copy');
+    document.body.removeChild(textoTemporal);
+}
