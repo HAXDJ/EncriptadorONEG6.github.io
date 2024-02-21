@@ -79,11 +79,11 @@ header{
     margin: 0.3%;
     padding: 2%;
     gap: 8%;
-    width: 25%;
+    width: 15%;
     background-color: #0a3871;
     border-radius: 24px;
     font-family: 'Roboto';
-    font-size: 18px;
+    font-size: 12px;
     line-height: 19px;
     text-align: center;
     color: white;
@@ -95,11 +95,11 @@ header{
     margin: 0.3%;
     padding: 2%;
     gap: 8%;
-    width: 25%;
+    width: 15%;
     background-color: gray;
     border-radius: 24px;
     font-family: 'Roboto';
-    font-size: 18px;
+    font-size: 12px;
     line-height: 19px;
     text-align: center;
     color: white;
@@ -108,23 +108,22 @@ header{
 .botonCopiar{
     align-items: center;
     justify-content: center;
-    margin: 0.3%;
-    margin-top: 5%;
+    margin: 0.3%;   
     padding: 2%;
     gap: 8%;
-    width: 50%;
+    width: 15%;
     background-color: rgb(255, 246, 198);
     border-radius: 24px;
     font-family: 'Roboto';
-    font-size: 18px;
-    line-height: 25px;
+    font-size: 12px;
+    line-height: 19px;
     text-align: center;
     color: rgb(29, 21, 13);
 }
 
 .botonDesencriptar:hover,.botonEncriptar:hover{
     margin: 0.3%;
-    width: 24.5%;
+    width: 14.5%;
     padding: 1.8%;
 }
 .botonDesencriptar:active,.botonEncriptar:active{
@@ -133,9 +132,8 @@ header{
 }
 
 .botonCopiar:hover{
-    margin: 0.3%;
-    margin-top: 5%;
-    width: 49.5%;
+    margin: 0.3%;    
+    width: 14.5%;
     padding: 1.8%;
 }
 
