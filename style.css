@@ -207,7 +207,7 @@ header{
     }
     .texto{
         width: 80%;
-        height: 50%;
+        height: 40%;
         left: 10%;
         top: 5%;
     }
@@ -243,6 +243,7 @@ header{
         height: 25%;
         left: 10%;
         top: 72%;
+        box-shadow: none;
     }
     .encriptado img{
         top: 0px;
@@ -250,8 +251,8 @@ header{
         visibility: hidden;        
     }
     .mensajeEncriptado{
-        top: 0px;
-        width: 100%;
-        font-weight: 5px;
+        top: 0;
+        width: 100%;        
+        font-size: 5px;
     }
 }
