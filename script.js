@@ -30,7 +30,7 @@ function desencriptar() {
     let cajaFuerte = document.getElementById('cajaFuerte');
     let parrafo = document.getElementById('parrafo');
 
-    if (texto.trim() !== '') { // Verifica si el texto no está vacío
+    if (texto.trim() !== '') {
         let textoCifrado = texto
             .replace(/enter/gi, 'e')
             .replace(/imes/gi, 'i')
