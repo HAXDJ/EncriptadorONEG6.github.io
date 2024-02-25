@@ -4,7 +4,7 @@ function encriptar() {
     let cajaFuerte = document.getElementById('cajaFuerte');
     let parrafo = document.getElementById('parrafo');
 
-    if (texto.trim() !== '') { // Verifica si el texto no está vacío
+    if (texto.trim() !== '') {
         let textoCifrado = texto
             .replace(/e/gi, 'enter')
             .replace(/i/gi, 'imes')
@@ -17,7 +17,7 @@ function encriptar() {
         cajaFuerte.src = './imagenes/close.svg';
         parrafo.textContent = "";
     } else {
-        cajaFuerte.src = './imagenes/vault-154023.svg'; // Restaura la imagen original
+        cajaFuerte.src = './imagenes/vault-154023.svg';
         tituloMensaje.textContent = 'Ningún secreto fue encriptado';
         parrafo.textContent = 'Escribe el secreto que desees ocultar o revelar';
         swal('Oooopss!', 'Debes ingresar el secreto', 'warning');
