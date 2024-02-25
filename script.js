@@ -43,7 +43,7 @@ function desencriptar() {
         cajaFuerte.src = './imagenes/open.svg';
         parrafo.textContent = "";
     } else {
-        cajaFuerte.src = './imagenes/vault-154023.svg'; // Restaura la imagen original
+        cajaFuerte.src = './imagenes/vault-154023.svg';
         tituloMensaje.textContent = 'Ningún secreto fue encriptado';
         parrafo.textContent = 'Escribe el secreto que desees ocultar o revelar';
         swal('Oooopss!', 'Debes ingresar el secreto', 'warning');
