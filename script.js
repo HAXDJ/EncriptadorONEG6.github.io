@@ -17,7 +17,7 @@ function encriptar() {
         cajaFuerte.src = './imagenes/close.svg';
         parrafo.textContent = "";
     } else {
-        cajaFuerte.src = './imagenes/vault-154023.svg';
+        cajaFuerte.src = './imagenes/vault.svg';
         tituloMensaje.textContent = 'Ningún secreto fue encriptado';
         parrafo.textContent = 'Escribe el secreto que desees ocultar o revelar';
         swal('Oooopss!', 'Debes ingresar el secreto', 'warning');
@@ -43,7 +43,7 @@ function desencriptar() {
         cajaFuerte.src = './imagenes/open.svg';
         parrafo.textContent = "";
     } else {
-        cajaFuerte.src = './imagenes/vault-154023.svg';
+        cajaFuerte.src = './imagenes/vault.svg';
         tituloMensaje.textContent = 'Ningún secreto fue encriptado';
         parrafo.textContent = 'Escribe el secreto que desees ocultar o revelar';
         swal('Oooopss!', 'Debes ingresar el secreto', 'warning');
@@ -52,11 +52,12 @@ function desencriptar() {
 
 function copiarTexto() {
     let textoEncriptado = document.getElementById('texto').value;
-    let textoTemporal = document.createElement('textarea');
-    textoTemporal.value = textoEncriptado;
-
-    document.body.appendChild(textoTemporal);
-    textoTemporal.select();
-    document.execCommand('copy');
-    document.body.removeChild(textoTemporal);
+    navigator.clipboard.writeText(textoEncriptado)
+        .then(() => {
+            swal('¡Éxito!', '¡El texto se copió al portapapeles!', 'success');
+        })
+        .catch((error) => {
+            console.error('Error al copiar el texto:', error);
+            swal('Error', 'No se pudo copiar el texto al portapapeles', 'error');
+        });
 }
