@@ -157,6 +157,11 @@ header{
     border-radius: 32px;
 }
 
+.encriptado img {
+    src: './imagenes/vault-154023.svg';
+    }
+    
+
 .mensajeEncriptado{
     display: flex;
     flex-direction: column;
